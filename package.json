@@ -1,5 +1,5 @@
 {
-  "name": "crypt-hans",
+  "name": "hans-cryptor",
   "version": "1.0.0",
   "description": "string cryptor",
   "main": "src/index.ts",
