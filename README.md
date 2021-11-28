@@ -21,14 +21,14 @@ npm i hans-cryptor
 
 <a name="example"><h2>Example</h2></a>
 
-Export *encrypt*, *decrypt*, *compare* from *hans-cryptor*
+Export crypt from *hans-cryptor*
 
 ```javascript
-const {encrypt, decrypt, compare} = require('hans-cryptor')
+const crypt = require('hans-cryptor')
 ```
 using TypeScript
 ```typescript
-import {encrypt, decrypt, compare} from 'hans-cryptor'
+import crypt from 'hans-cryptor'
 ```
 
 <a name="encrypt"><h3>encrypt</h3></a>        
