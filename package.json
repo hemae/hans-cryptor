@@ -1,0 +1,19 @@
+{
+  "name": "crypt-hans",
+  "version": "1.0.0",
+  "description": "string cryptor",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "crypt",
+    "encrypt",
+    "decrypt"
+  ],
+  "author": "Hans Andersen <hemae2468@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
