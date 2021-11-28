@@ -9,11 +9,11 @@ class Crypt {
         return this._crypt(str, key, 1)
     }
 
-    public decrypt(encryptedStr: string, key: string) {
+    public decrypt(encryptedStr: string, key: string): string {
         return this._crypt(encryptedStr, key, -1)
     }
 
-    public compare(str: string, encryptedStr: string, key: string) {
+    public compare(str: string, encryptedStr: string, key: string): boolean {
         return str === this.decrypt(encryptedStr, key)
     }
 
