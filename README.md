@@ -11,7 +11,7 @@ string cryptor for node.js
     
 
 <a name="features"><h2>Features</h2></a>
-* encrypring and decrypting strings by password using Vigenere method
+* encrypting and decrypting strings by password using Vigenere method
 
 <a name="installing"><h2>Installing</h2></a>
 Add the package to your project
