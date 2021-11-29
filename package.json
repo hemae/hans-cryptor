@@ -1,11 +1,12 @@
 {
   "name": "hans-cryptor",
-  "version": "1.0.0",
-  "description": "string cryptor",
-  "main": "src/index.ts",
+  "version": "1.0.1",
+  "description": "string cryptor using Vigenere method",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc"
   },
+  "repository": "git://github.com/hemae/hans-cryptor.git",
   "keywords": [
     "crypt",
     "encrypt",

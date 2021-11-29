@@ -5,22 +5,28 @@ class Crypt {
     constructor() {
     }
 
-    public encrypt(str: string, key: string): string {
+    public encrypt(str: string, key: string = ''): string {
         return this._crypt(str, key, 1)
     }
 
-    public decrypt(encryptedStr: string, key: string): string {
+    public decrypt(encryptedStr: string, key: string = ''): string {
         return this._crypt(encryptedStr, key, -1)
     }
 
-    public compare(str: string, encryptedStr: string, key: string): boolean {
+    public compare(str: string, encryptedStr: string, key: string = ''): boolean {
         return str === this.decrypt(encryptedStr, key)
     }
 
     private _appendKey(str: string, key: string): string {
         let appendKey = ''
-        while (appendKey.length < str.length) {
-            appendKey += key
+        if (key) {
+            while (appendKey.length < str.length) {
+                appendKey += key
+            }
+        } else {
+            for (let i = 0; i < str.length; i++) {
+                appendKey += 'A'
+            }
         }
         return appendKey.slice(0, str.length)
     }
